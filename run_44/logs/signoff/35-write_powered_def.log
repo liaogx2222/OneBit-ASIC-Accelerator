@@ -1,0 +1,21 @@
+OpenROAD 41a51eaf4ca2171c92ff38afb91eb37bbd3f36da 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/compute_core/runs/run_4*4/tmp/merged.nom.lef
+[INFO ODB-0223]     Created 14 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/compute_core/runs/run_4*4/tmp/merged.nom.lef
+[INFO ODB-0127] Reading DEF file: /openlane/designs/compute_core/runs/run_4*4/results/routing/compute_core.def
+[INFO ODB-0128] Design: compute_core
+[INFO ODB-0130]     Created 267 pins.
+[INFO ODB-0131]     Created 73843 components and 361379 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 279132 connections.
+[INFO ODB-0133]     Created 25120 nets and 82247 connections.
+[INFO ODB-0134] Finished DEF file: /openlane/designs/compute_core/runs/run_4*4/results/routing/compute_core.def
+Top-level design name: compute_core
+Found default power net 'VPWR'
+Found default ground net 'VGND'
+Found 1 power ports.
+Found 1 ground ports.
+Modified power connections of 73843/73843 cells.

@@ -1,0 +1,69 @@
+[WARNING GRT-0040] Net VPWR has wires outside die area.
+[WARNING GRT-0040] Net VPWR has wires outside die area.
+[WARNING GRT-0040] Net VPWR has wires outside die area.
+[WARNING GRT-0040] Net VPWR has wires outside die area.
+[WARNING GRT-0040] Net VPWR has wires outside die area.
+[WARNING GRT-0040] Net VPWR has wires outside die area.
+[WARNING GRT-0040] Net VPWR has wires outside die area.
+[WARNING GRT-0040] Net VPWR has wires outside die area.
+[WARNING GRT-0040] Net VPWR has wires outside die area.
+[WARNING GRT-0040] Net VPWR has wires outside die area.
+[WARNING GRT-0040] Net VPWR has wires outside die area.
+[WARNING GRT-0040] Net VPWR has wires outside die area.
+[WARNING GRT-0040] Net VPWR has wires outside die area.
+[WARNING GRT-0040] Net VPWR has wires outside die area.
+[WARNING GRT-0040] Net VGND has wires outside die area.
+[WARNING GRT-0040] Net VGND has wires outside die area.
+[WARNING GRT-0040] Net VGND has wires outside die area.
+[WARNING GRT-0040] Net VGND has wires outside die area.
+[WARNING GRT-0040] Net VGND has wires outside die area.
+[WARNING GRT-0040] Net VGND has wires outside die area.
+[WARNING GRT-0040] Net VGND has wires outside die area.
+[WARNING GRT-0040] Net VGND has wires outside die area.
+[WARNING GRT-0040] Net VGND has wires outside die area.
+[WARNING GRT-0040] Net VGND has wires outside die area.
+[WARNING GRT-0040] Net VGND has wires outside die area.
+[WARNING GRT-0040] Net VGND has wires outside die area.
+[WARNING GRT-0040] Net VGND has wires outside die area.
+[WARNING GRT-0040] Net VGND has wires outside die area.
+[WARNING RSZ-0073] driver pin _32647_/Y not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32647_/Y
+[WARNING RSZ-0073] driver pin _32647_/Y not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32647_/Y
+[WARNING RSZ-0073] driver pin _32647_/Y not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32647_/Y
+[WARNING RSZ-0073] driver pin _32647_/Y not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32647_/Y
+[WARNING RSZ-0073] driver pin _32647_/Y not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32647_/Y
+[WARNING RSZ-0073] driver pin _32647_/Y not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32647_/Y
+[WARNING RSZ-0073] driver pin _32647_/Y not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32647_/Y
+[WARNING RSZ-0073] driver pin _32647_/Y not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32647_/Y
+[WARNING RSZ-0073] driver pin _32647_/Y not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32647_/Y
+[WARNING RSZ-0073] driver pin _32647_/Y not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32647_/Y
+[WARNING RSZ-0073] driver pin _32595_/X not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32595_/X
+[WARNING RSZ-0073] driver pin _32647_/Y not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32647_/Y
+[WARNING RSZ-0073] driver pin _32647_/Y not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32647_/Y
+[WARNING RSZ-0073] driver pin _32595_/X not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32595_/X
+[WARNING RSZ-0073] driver pin _32647_/Y not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32647_/Y
+[WARNING RSZ-0073] driver pin _32647_/Y not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32647_/Y
+[WARNING RSZ-0073] driver pin _32595_/X not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32595_/X
+[WARNING RSZ-0073] driver pin _32647_/Y not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32647_/Y
+[WARNING RSZ-0073] driver pin _32595_/X not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _32595_/X
+[WARNING RSZ-0073] driver pin _40271_/Q not found in global routes
+[WARNING RSZ-0075] makeBufferedNet failed for driver _40271_/Q
+[WARNING RSZ-0062] Unable to repair all setup violations.

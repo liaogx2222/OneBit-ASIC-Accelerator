@@ -1,0 +1,235 @@
+%Warning-EOFNEWLINE: /openlane/designs/compute_core/src/fp16_adder.v:185:10: Missing newline at end of file (POSIX 3.206).
+                                                                           : ... Suggest add newline.
+  185 | endmodule
+      |          ^
+                     ... For warning description see https://verilator.org/warn/EOFNEWLINE?v=5.009
+                     ... Use "/* verilator lint_off EOFNEWLINE */" and lint_on around source to disable this message.
+%Warning-EOFNEWLINE: /openlane/designs/compute_core/src/fp16_mul.v:114:10: Missing newline at end of file (POSIX 3.206).
+                                                                         : ... Suggest add newline.
+  114 | endmodule
+      |          ^
+%Warning-EOFNEWLINE: /openlane/designs/compute_core/src/pe.v:105:10: Missing newline at end of file (POSIX 3.206).
+                                                                   : ... Suggest add newline.
+  105 | endmodule
+      |          ^
+%Warning-EOFNEWLINE: /openlane/designs/compute_core/src/skew_buffer.v:43:10: Missing newline at end of file (POSIX 3.206).
+                                                                           : ... Suggest add newline.
+   43 | endmodule
+      |          ^
+%Warning-EOFNEWLINE: /openlane/designs/compute_core/src/skew_network.v:42:10: Missing newline at end of file (POSIX 3.206).
+                                                                            : ... Suggest add newline.
+   42 | endmodule
+      |          ^
+%Warning-EOFNEWLINE: /openlane/designs/compute_core/src/systolic_array.v:119:10: Missing newline at end of file (POSIX 3.206).
+                                                                               : ... Suggest add newline.
+  119 | endmodule
+      |          ^
+%Warning-EOFNEWLINE: /openlane/designs/compute_core/src/compute_core.v:187:10: Missing newline at end of file (POSIX 3.206).
+                                                                             : ... Suggest add newline.
+  187 | endmodule
+      |          ^
+%Warning-PINCONNECTEMPTY: /openlane/designs/compute_core/src/compute_core.v:117:10: Cell pin connected by name with empty reference: 'ready_in'
+  117 |         .ready_in    (), 
+      |          ^~~~~~~~
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/fp16_adder.v:96:31: Operator ASSIGN expects 5 bits on the Assign RHS, but Assign RHS's SUB generates 32 bits.
+                                                                          : ... In instance compute_core.u_array.row_gen[15].col_gen[15].u_pe.u_fp16_adder
+   96 |                     shift_amt = 13 - i;  
+      |                               ^
+%Warning-WIDTHEXPAND: /openlane/designs/compute_core/src/fp16_adder.v:156:56: Operator ADD expects 12 bits on the RHS, but RHS's VARREF 'round_up' generates 1 bits.
+                                                                            : ... In instance compute_core.u_array.row_gen[15].col_gen[15].u_pe.u_fp16_adder
+  156 |     wire [11:0] mant_rounded = {1'b0, mant_norm[13:3]} + round_up;
+      |                                                        ^
+%Warning-WIDTHEXPAND: /openlane/designs/compute_core/src/fp16_adder.v:164:66: Operator ADD expects 5 bits on the RHS, but RHS's VARREF 'round_overflow' generates 1 bits.
+                                                                            : ... In instance compute_core.u_array.row_gen[15].col_gen[15].u_pe.u_fp16_adder
+  164 |     wire [4:0] final_exp  = is_tiny ? 5'd0 : (exp_norm_temp[4:0] + round_overflow);
+      |                                                                  ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:25:31: Bit extraction of array[2:0] requires 2 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[14].genblk1.u_deskew_buf
+   25 |             assign d_out = mem[ptr]; 
+      |                               ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:33:24: Bit extraction of array[2:0] requires 2 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[14].genblk1.u_deskew_buf
+   33 |                     mem[ptr] <= d_in;
+      |                        ^
+%Warning-WIDTHEXPAND: /openlane/designs/compute_core/src/skew_buffer.v:34:29: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'ptr' generates 8 bits.
+                                                                            : ... In instance compute_core.col_deskew_out[14].genblk1.u_deskew_buf
+   34 |                     if (ptr == DELAY - 1)
+      |                             ^~
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:25:31: Bit extraction of array[5:0] requires 3 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[13].genblk1.u_deskew_buf
+   25 |             assign d_out = mem[ptr]; 
+      |                               ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:33:24: Bit extraction of array[5:0] requires 3 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[13].genblk1.u_deskew_buf
+   33 |                     mem[ptr] <= d_in;
+      |                        ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:25:31: Bit extraction of array[8:0] requires 4 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[12].genblk1.u_deskew_buf
+   25 |             assign d_out = mem[ptr]; 
+      |                               ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:33:24: Bit extraction of array[8:0] requires 4 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[12].genblk1.u_deskew_buf
+   33 |                     mem[ptr] <= d_in;
+      |                        ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:25:31: Bit extraction of array[11:0] requires 4 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[11].genblk1.u_deskew_buf
+   25 |             assign d_out = mem[ptr]; 
+      |                               ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:33:24: Bit extraction of array[11:0] requires 4 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[11].genblk1.u_deskew_buf
+   33 |                     mem[ptr] <= d_in;
+      |                        ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:25:31: Bit extraction of array[14:0] requires 4 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[10].genblk1.u_deskew_buf
+   25 |             assign d_out = mem[ptr]; 
+      |                               ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:33:24: Bit extraction of array[14:0] requires 4 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[10].genblk1.u_deskew_buf
+   33 |                     mem[ptr] <= d_in;
+      |                        ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:25:31: Bit extraction of array[17:0] requires 5 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[9].genblk1.u_deskew_buf
+   25 |             assign d_out = mem[ptr]; 
+      |                               ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:33:24: Bit extraction of array[17:0] requires 5 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[9].genblk1.u_deskew_buf
+   33 |                     mem[ptr] <= d_in;
+      |                        ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:25:31: Bit extraction of array[20:0] requires 5 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[8].genblk1.u_deskew_buf
+   25 |             assign d_out = mem[ptr]; 
+      |                               ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:33:24: Bit extraction of array[20:0] requires 5 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[8].genblk1.u_deskew_buf
+   33 |                     mem[ptr] <= d_in;
+      |                        ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:25:31: Bit extraction of array[23:0] requires 5 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[7].genblk1.u_deskew_buf
+   25 |             assign d_out = mem[ptr]; 
+      |                               ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:33:24: Bit extraction of array[23:0] requires 5 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[7].genblk1.u_deskew_buf
+   33 |                     mem[ptr] <= d_in;
+      |                        ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:25:31: Bit extraction of array[26:0] requires 5 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[6].genblk1.u_deskew_buf
+   25 |             assign d_out = mem[ptr]; 
+      |                               ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:33:24: Bit extraction of array[26:0] requires 5 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[6].genblk1.u_deskew_buf
+   33 |                     mem[ptr] <= d_in;
+      |                        ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:25:31: Bit extraction of array[29:0] requires 5 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[5].genblk1.u_deskew_buf
+   25 |             assign d_out = mem[ptr]; 
+      |                               ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:33:24: Bit extraction of array[29:0] requires 5 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[5].genblk1.u_deskew_buf
+   33 |                     mem[ptr] <= d_in;
+      |                        ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:25:31: Bit extraction of array[32:0] requires 6 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[4].genblk1.u_deskew_buf
+   25 |             assign d_out = mem[ptr]; 
+      |                               ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:33:24: Bit extraction of array[32:0] requires 6 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[4].genblk1.u_deskew_buf
+   33 |                     mem[ptr] <= d_in;
+      |                        ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:25:31: Bit extraction of array[35:0] requires 6 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[3].genblk1.u_deskew_buf
+   25 |             assign d_out = mem[ptr]; 
+      |                               ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:33:24: Bit extraction of array[35:0] requires 6 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[3].genblk1.u_deskew_buf
+   33 |                     mem[ptr] <= d_in;
+      |                        ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:25:31: Bit extraction of array[38:0] requires 6 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[2].genblk1.u_deskew_buf
+   25 |             assign d_out = mem[ptr]; 
+      |                               ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:33:24: Bit extraction of array[38:0] requires 6 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[2].genblk1.u_deskew_buf
+   33 |                     mem[ptr] <= d_in;
+      |                        ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:25:31: Bit extraction of array[41:0] requires 6 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[1].genblk1.u_deskew_buf
+   25 |             assign d_out = mem[ptr]; 
+      |                               ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:33:24: Bit extraction of array[41:0] requires 6 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[1].genblk1.u_deskew_buf
+   33 |                     mem[ptr] <= d_in;
+      |                        ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:25:31: Bit extraction of array[44:0] requires 6 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[0].genblk1.u_deskew_buf
+   25 |             assign d_out = mem[ptr]; 
+      |                               ^
+%Warning-WIDTHTRUNC: /openlane/designs/compute_core/src/skew_buffer.v:33:24: Bit extraction of array[44:0] requires 6 bit index, not 8 bits.
+                                                                           : ... In instance compute_core.col_deskew_out[0].genblk1.u_deskew_buf
+   33 |                     mem[ptr] <= d_in;
+      |                        ^
+%Warning-WIDTHEXPAND: /openlane/designs/compute_core/src/fp16_mul.v:83:50: Operator ADD expects 12 bits on the RHS, but RHS's VARREF 'round_up' generates 1 bits.
+                                                                         : ... In instance compute_core.post_mul_gen[15].u_post_mul
+   83 |     wire [11:0] mant_rounded = {1'b0, mant_norm} + round_up;  
+      |                                                  ^
+%Warning-WIDTHEXPAND: /openlane/designs/compute_core/src/fp16_mul.v:89:41: Operator ADD expects 7 bits on the RHS, but RHS's VARREF 'norm_shift' generates 1 bits.
+                                                                         : ... In instance compute_core.post_mul_gen[15].u_post_mul
+   89 |     wire signed [6:0] exp_norm = exp_s1 + norm_shift + round_overflow;
+      |                                         ^
+%Warning-WIDTHEXPAND: /openlane/designs/compute_core/src/fp16_mul.v:89:54: Operator ADD expects 7 bits on the RHS, but RHS's VARREF 'round_overflow' generates 1 bits.
+                                                                         : ... In instance compute_core.post_mul_gen[15].u_post_mul
+   89 |     wire signed [6:0] exp_norm = exp_s1 + norm_shift + round_overflow;
+      |                                                      ^
+%Warning-UNUSEDSIGNAL: /openlane/designs/compute_core/src/compute_core.v:30:24: Bits of signal are not used: 'pre_mul_valid_out_arr'[15:1]
+                                                                              : ... In instance compute_core
+   30 |     wire [ROWS-1:0]    pre_mul_valid_out_arr;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/compute_core/src/compute_core.v:31:24: Bits of signal are not used: 'pre_mul_ready_in_arr'[15:1]
+                                                                              : ... In instance compute_core
+   31 |     wire [ROWS-1:0]    pre_mul_ready_in_arr;
+      |                        ^~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/compute_core/src/compute_core.v:164:21: Bits of signal are not used: 'post_mul_valid_out_arr'[15:1]
+                                                                               : ... In instance compute_core
+  164 |     wire [COLS-1:0] post_mul_valid_out_arr;
+      |                     ^~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/compute_core/src/compute_core.v:165:21: Bits of signal are not used: 'post_mul_ready_in_arr'[15:1]
+                                                                               : ... In instance compute_core
+  165 |     wire [COLS-1:0] post_mul_ready_in_arr;
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/compute_core/src/fp16_mul.v:83:17: Bits of signal are not used: 'mant_rounded'[10]
+                                                                          : ... In instance compute_core.post_mul_gen[15].u_post_mul
+   83 |     wire [11:0] mant_rounded = {1'b0, mant_norm} + round_up;  
+      |                 ^~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/compute_core/src/skew_buffer.v:7:24: Signal is not used: 'clk'
+                                                                            : ... In instance compute_core.u_skew.row_skew[0].u_skew_buf
+    7 |     input  wire        clk,
+      |                        ^~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/compute_core/src/skew_buffer.v:8:24: Signal is not used: 'rst_n'
+                                                                            : ... In instance compute_core.u_skew.row_skew[0].u_skew_buf
+    8 |     input  wire        rst_n,
+      |                        ^~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/compute_core/src/skew_buffer.v:9:24: Signal is not used: 'en'
+                                                                            : ... In instance compute_core.u_skew.row_skew[0].u_skew_buf
+    9 |     input  wire        en,          
+      |                        ^~
+%Warning-UNUSEDSIGNAL: /openlane/designs/compute_core/src/fp16_adder.v:41:17: Bits of signal are not used: 'mask_temp'[14]
+                                                                            : ... In instance compute_core.u_array.row_gen[15].col_gen[15].u_pe.u_fp16_adder
+   41 |     wire [14:0] mask_temp = (15'd1 << exp_diff) - 1'b1;
+      |                 ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/compute_core/src/fp16_adder.v:130:17: Bits of signal are not used: 'mant_norm'[14]
+                                                                             : ... In instance compute_core.u_array.row_gen[15].col_gen[15].u_pe.u_fp16_adder
+  130 |      reg [14:0] mant_norm;
+      |                 ^~~~~~~~~
+%Warning-UNUSEDSIGNAL: /openlane/designs/compute_core/src/fp16_adder.v:156:17: Bits of signal are not used: 'mant_rounded'[10]
+                                                                             : ... In instance compute_core.u_array.row_gen[15].col_gen[15].u_pe.u_fp16_adder
+  156 |     wire [11:0] mant_rounded = {1'b0, mant_norm[13:3]} + round_up;
+      |                 ^~~~~~~~~~~~
+%Warning-UNOPTFLAT: /openlane/designs/compute_core/src/systolic_array.v:49:17: Signal unoptimizable: Circular combinational logic: 'compute_core.u_array.r_wire'
+   49 |     wire        r_wire [0:ROWS][0:COLS-1];
+      |                 ^~~~~~
+                    /openlane/designs/compute_core/src/systolic_array.v:49:17:      Example path: compute_core.u_array.r_wire
+                    /openlane/designs/compute_core/src/fp16_adder.v:171:21:      Example path: ASSIGNW
+                    /openlane/designs/compute_core/src/fp16_adder.v:110:10:      Example path: compute_core.u_array.row_gen[0].col_gen[0].u_pe.u_fp16_adder.ready_s2
+                    /openlane/designs/compute_core/src/fp16_adder.v:58:21:      Example path: ASSIGNW
+                    /openlane/designs/compute_core/src/pe.v:22:24:      Example path: compute_core.u_array.row_gen[0].col_gen[0].u_pe.ready_in
+                    /openlane/designs/compute_core/src/systolic_array.v:104:22:      Example path: ASSIGNW
+                    /openlane/designs/compute_core/src/systolic_array.v:49:17:      Example path: compute_core.u_array.r_wire

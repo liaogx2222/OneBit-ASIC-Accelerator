@@ -1,0 +1,5 @@
+Warning: /openlane/designs/compute_core/runs/run_4*4/results/routing/compute_core.nl.v line 100953, module sky130_fd_sc_hd__tapvpwrvgnd_1 not found. Creating black box for TAP_556.
+Warning: /openlane/designs/compute_core/runs/run_4*4/results/routing/compute_core.nl.v line 115808, module sky130_fd_sc_hd__fill_1 not found. Creating black box for FILLER_0_0_7.
+Warning: /openlane/designs/compute_core/runs/run_4*4/results/routing/compute_core.nl.v line 115809, module sky130_fd_sc_hd__fill_2 not found. Creating black box for FILLER_0_0_14.
+Warning: /openlane/designs/compute_core/runs/run_4*4/results/routing/compute_core.nl.v line 115816, module sky130_ef_sc_hd__decap_12 not found. Creating black box for FILLER_0_0_71.
+[WARNING] Did not save OpenROAD database!

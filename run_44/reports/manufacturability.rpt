@@ -1,0 +1,19 @@
+Design Name: compute_core
+Run Directory: /openlane/designs/compute_core/runs/run_4*4
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/compute_core/runs/run_4*4/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/compute_core/runs/run_4*4/logs/signoff/37-compute_core.lef.lvs.log
+Number of nets: 25122                      |Number of nets: 25122                      
+Design is LVS clean.
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/compute_core/runs/run_4*4/logs/signoff/39-arc.log
+Pin violations: 49
+Net violations: 45

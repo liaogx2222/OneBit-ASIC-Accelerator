@@ -1,0 +1,33 @@
+# syn/synth.ys
+
+# 1. 读入所有 RTL 源文件
+read_verilog ../rtl/fp16_adder.v
+read_verilog ../rtl/fp16_mul.v
+read_verilog ../rtl/pe.v
+read_verilog ../rtl/skew_buffer.v
+read_verilog ../rtl/skew_network.v
+read_verilog ../rtl/systolic_array.v
+read_verilog ../rtl/sdp_sram.v
+read_verilog ../rtl/pingpong_buffer.v
+read_verilog ../rtl/axis_gearbox_s2p.v
+read_verilog ../rtl/sram_read_p2s.v
+read_verilog ../rtl/global_controller.v
+read_verilog ../rtl/compute_core.v
+read_verilog ../rtl/onebit_top.v
+
+# 2. 顶层模块设定与层次检查
+hierarchy -check -top onebit_top
+
+# 3. 执行初步优化 (绝对不要加 flatten!)
+proc
+opt
+
+# 4. 门级映射 (Yosys 默认会尽可能保留层次)
+synth -top onebit_top
+
+# 5. 打印资源消耗统计报告 
+
+stat
+
+# 6. 生成综合后门级网表
+write_verilog onebit_top_netlist.v
