@@ -1,1 +1,0 @@
-lvs {/openlane/designs/compute_core/runs/run_4*4/results/signoff/compute_core.spice compute_core} {/openlane/designs/compute_core/runs/run_4*4/tmp/signoff/34-compute_core.pnl.v compute_core} /root/.ciel/sky130A/libs.tech/netgen/sky130A_setup.tcl /openlane/designs/compute_core/runs/run_4*4/logs/signoff/37-compute_core.lef.lvs.log -json
